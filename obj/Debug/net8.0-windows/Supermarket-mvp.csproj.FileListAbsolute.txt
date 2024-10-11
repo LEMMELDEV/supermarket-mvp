@@ -16,3 +16,12 @@ C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-wind
 C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermarket-mvp.pdb
 C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermarket-mvp.genruntimeconfig.cache
 C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\ref\Supermarket-mvp.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\Supermarket-mvp.dll.config
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermarket-mvp.csproj.AssemblyReference.cache
+C:\Users\Hans\source\repos\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermar.FBD2E1F5.Up2Date

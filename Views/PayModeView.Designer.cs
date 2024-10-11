@@ -119,6 +119,7 @@
             // 
             // BtnClose
             // 
+            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnClose.AutoSize = true;
             BtnClose.Image = Properties.Resources.cerrar;
             BtnClose.Location = new Point(631, 285);
@@ -130,6 +131,7 @@
             // 
             // BtnDelete
             // 
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDelete.AutoSize = true;
             BtnDelete.Image = Properties.Resources.delete;
             BtnDelete.Location = new Point(631, 220);
@@ -141,6 +143,7 @@
             // 
             // BtnEdit
             // 
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.AutoSize = true;
             BtnEdit.Image = Properties.Resources.edit;
             BtnEdit.Location = new Point(631, 155);
@@ -152,6 +155,7 @@
             // 
             // BtnNew
             // 
+            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.AutoSize = true;
             BtnNew.Image = Properties.Resources._new;
             BtnNew.Location = new Point(631, 90);
@@ -165,6 +169,7 @@
             // 
             DgPayMode.AllowUserToAddRows = false;
             DgPayMode.AllowUserToDeleteRows = false;
+            DgPayMode.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgPayMode.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgPayMode.Location = new Point(11, 81);
@@ -176,6 +181,7 @@
             // 
             // BtnSearch
             // 
+            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSearch.AutoSize = true;
             BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
             BtnSearch.Location = new Point(631, 16);

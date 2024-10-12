@@ -342,7 +342,7 @@
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Name = "ProductView";
-            Text = "ProductView";
+            Text = "Products Management";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabControl1.ResumeLayout(false);

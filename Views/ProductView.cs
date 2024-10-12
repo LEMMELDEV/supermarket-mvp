@@ -21,6 +21,8 @@ namespace Supermarket_mvp.Views
             AssociateAndRaiseViewEvents();
             tabControl1.TabPages.Remove(tabPageProductDetail);
 
+            BtnClose.Click += delegate { this.Close(); };
+
         }
 
         private void AssociateAndRaiseViewEvents()
@@ -34,28 +36,31 @@ namespace Supermarket_mvp.Views
                 }
             };
 
-            BtnNew.Click += delegate {
+            BtnNew.Click += delegate
+            {
                 AddNewEvent?.Invoke(this, EventArgs.Empty);
 
                 tabControl1.TabPages.Remove(tabPageProductList);
                 tabControl1.TabPages.Add(tabPageProductDetail);
-                tabPageProductDetail.Text = "Add New Pay Mode";
+                tabPageProductDetail.Text = "Add New Product";
 
             };
 
-            BtnEdit.Click += delegate {
+            BtnEdit.Click += delegate
+            {
                 EditEvent?.Invoke(this, EventArgs.Empty);
 
                 tabControl1.TabPages.Remove(tabPageProductList);
                 tabControl1.TabPages.Add(tabPageProductDetail);
-                tabPageProductDetail.Text = "Edit Pay Mode";
+                tabPageProductDetail.Text = "Edit Product";
 
             };
 
 
-            BtnDelete.Click += delegate {
+            BtnDelete.Click += delegate
+            {
                 var result = MessageBox.Show(
-                    "Are you sure you want to delete the selected Pay Mode",
+                    "Are you sure you want to delete the selected Product",
                     "Warning",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning);
@@ -67,7 +72,8 @@ namespace Supermarket_mvp.Views
                 }
             };
 
-            BtnSave.Click += delegate {
+            BtnSave.Click += delegate
+            {
                 SaveEvent?.Invoke(this, EventArgs.Empty);
 
                 if (isSuccessful) // SI grabar fue exitoso
@@ -80,7 +86,8 @@ namespace Supermarket_mvp.Views
             };
 
 
-            BtnCancel.Click += delegate {
+            BtnCancel.Click += delegate
+            {
                 CancelEvent?.Invoke(this, EventArgs.Empty);
 
                 tabControl1.TabPages.Remove(tabPageProductDetail);
@@ -88,7 +95,7 @@ namespace Supermarket_mvp.Views
             };
         }
 
-        public string ProductId 
+        public string ProductId
         {
             get { return TxtProductId.Text; }
             set { TxtProductId.Text = value; }
@@ -98,17 +105,17 @@ namespace Supermarket_mvp.Views
             get { return TxtProductName.Text; }
             set { TxtProductName.Text = value; }
         }
-        public string ProductPrice 
+        public string ProductPrice
         {
             get { return TxtProductPrice.Text; }
             set { TxtProductPrice.Text = value; }
         }
-        public string ProductStock 
+        public string ProductStock
         {
             get { return TxtProductStock.Text; }
             set { TxtProductStock.Text = value; }
         }
-        public string ProductCategory 
+        public string ProductCategory
         {
             get { return TxtProductCategory.Text; }
             set { TxtProductCategory.Text = value; }
@@ -149,5 +156,26 @@ namespace Supermarket_mvp.Views
         {
             DgProduct.DataSource = productList;
         }
+
+        private static ProductView instance;
+
+        public static ProductView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new ProductView();
+                instance.MdiParent = parentContainer;
+
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
+            }
+            else if (instance.WindowState == FormWindowState.Minimized)
+            {
+                instance.WindowState = FormWindowState.Normal;
+            }
+            instance.BringToFront();
+            return instance;
+        }
+
     }
 }

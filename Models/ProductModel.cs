@@ -22,13 +22,13 @@ namespace Supermarket_mvp.Models
         [DisplayName("Price")]
         [Required(ErrorMessage = "Price is required")]
         [StringLength(200, MinimumLength = 3, ErrorMessage = "Price must be obligatory")]
-        public float Price { get; set; }
+        public string Price { get; set; }
 
 
         [DisplayName("Stock")]
         [Required(ErrorMessage = "Stock is required")]
-        [StringLength(200, MinimumLength = 3, ErrorMessage = "Stock must be obligatory")]
-        public float Stock { get; set; }
+        [StringLength(200, MinimumLength = 1, ErrorMessage = "Stock must be obligatory")]
+        public string Stock { get; set; }
 
 
         [DisplayName("Category")]

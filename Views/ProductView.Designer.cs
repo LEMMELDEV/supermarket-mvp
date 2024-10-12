@@ -43,6 +43,8 @@
             TxtSearch = new TextBox();
             label2 = new Label();
             tabPageProductDetail = new TabPage();
+            TxtProductCategory = new TextBox();
+            label7 = new Label();
             TxtProductStock = new TextBox();
             label6 = new Label();
             TxtProductPrice = new TextBox();
@@ -53,8 +55,6 @@
             label4 = new Label();
             TxtProductId = new TextBox();
             label3 = new Label();
-            TxtProductCategory = new TextBox();
-            label7 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -123,7 +123,6 @@
             // 
             // BtnClose
             // 
-            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnClose.AutoSize = true;
             BtnClose.Image = Properties.Resources.cerrar;
             BtnClose.Location = new Point(14, 288);
@@ -135,7 +134,6 @@
             // 
             // BtnDelete
             // 
-            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDelete.AutoSize = true;
             BtnDelete.Image = Properties.Resources.delete;
             BtnDelete.Location = new Point(14, 223);
@@ -147,7 +145,6 @@
             // 
             // BtnEdit
             // 
-            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.AutoSize = true;
             BtnEdit.Image = Properties.Resources.edit;
             BtnEdit.Location = new Point(14, 158);
@@ -159,7 +156,6 @@
             // 
             // BtnNew
             // 
-            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.AutoSize = true;
             BtnNew.Image = Properties.Resources._new;
             BtnNew.Location = new Point(14, 93);
@@ -233,6 +229,23 @@
             tabPageProductDetail.Text = "Product Detail";
             tabPageProductDetail.UseVisualStyleBackColor = true;
             // 
+            // TxtProductCategory
+            // 
+            TxtProductCategory.Location = new Point(342, 228);
+            TxtProductCategory.Name = "TxtProductCategory";
+            TxtProductCategory.PlaceholderText = "Pay Mode Name";
+            TxtProductCategory.Size = new Size(249, 27);
+            TxtProductCategory.TabIndex = 21;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(342, 205);
+            label7.Name = "label7";
+            label7.Size = new Size(124, 20);
+            label7.TabIndex = 20;
+            label7.Text = "Product Category";
+            // 
             // TxtProductStock
             // 
             TxtProductStock.Location = new Point(19, 285);
@@ -240,7 +253,6 @@
             TxtProductStock.PlaceholderText = "Pay Mode Name";
             TxtProductStock.Size = new Size(249, 27);
             TxtProductStock.TabIndex = 19;
-            TxtProductStock.Text = "-";
             // 
             // label6
             // 
@@ -321,24 +333,6 @@
             label3.Size = new Size(79, 20);
             label3.TabIndex = 8;
             label3.Text = "Product ID";
-            // 
-            // TxtProductCategory
-            // 
-            TxtProductCategory.Location = new Point(342, 228);
-            TxtProductCategory.Name = "TxtProductCategory";
-            TxtProductCategory.PlaceholderText = "Pay Mode Name";
-            TxtProductCategory.Size = new Size(249, 27);
-            TxtProductCategory.TabIndex = 21;
-            TxtProductCategory.Text = "-";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(342, 205);
-            label7.Name = "label7";
-            label7.Size = new Size(124, 20);
-            label7.TabIndex = 20;
-            label7.Text = "Product Category";
             // 
             // ProductView
             // 

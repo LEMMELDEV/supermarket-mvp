@@ -120,7 +120,7 @@ namespace Supermarket_mvp.Presenters
 
             view.CategoriesId = categories.Id.ToString();
             view.CategoriesName = categories.Name;
-            view.CategoriesDescription = categories.Description;
+            view.CategoriesDescription = categories.Description.Trim();
 
             // se establece el modo como edición.
             view.IsEdit = true;

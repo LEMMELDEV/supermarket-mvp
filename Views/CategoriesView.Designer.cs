@@ -34,7 +34,6 @@
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPageCategoriesList = new TabPage();
-            tabPageCategoriesDetail = new TabPage();
             BtnClose = new Button();
             BtnDelete = new Button();
             BtnEdit = new Button();
@@ -43,20 +42,21 @@
             BtnSearch = new Button();
             TxtSearch = new TextBox();
             label2 = new Label();
+            tabPageCategoriesDetail = new TabPage();
             BtnCancel = new Button();
             BtnSave = new Button();
-            TxtCategoriesDescription = new TextBox();
             label5 = new Label();
             TxtCategoriesName = new TextBox();
             label4 = new Label();
             TxtCategoriesId = new TextBox();
             label3 = new Label();
+            TxtCategoriesDescription = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
             tabPageCategoriesList.SuspendLayout();
-            tabPageCategoriesDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DgCategories).BeginInit();
+            tabPageCategoriesDetail.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -116,24 +116,6 @@
             tabPageCategoriesList.TabIndex = 0;
             tabPageCategoriesList.Text = "Categories List";
             tabPageCategoriesList.UseVisualStyleBackColor = true;
-            // 
-            // tabPageCategoriesDetail
-            // 
-            tabPageCategoriesDetail.Controls.Add(BtnCancel);
-            tabPageCategoriesDetail.Controls.Add(BtnSave);
-            tabPageCategoriesDetail.Controls.Add(TxtCategoriesDescription);
-            tabPageCategoriesDetail.Controls.Add(label5);
-            tabPageCategoriesDetail.Controls.Add(TxtCategoriesName);
-            tabPageCategoriesDetail.Controls.Add(label4);
-            tabPageCategoriesDetail.Controls.Add(TxtCategoriesId);
-            tabPageCategoriesDetail.Controls.Add(label3);
-            tabPageCategoriesDetail.Location = new Point(4, 29);
-            tabPageCategoriesDetail.Name = "tabPageCategoriesDetail";
-            tabPageCategoriesDetail.Padding = new Padding(3);
-            tabPageCategoriesDetail.Size = new Size(792, 364);
-            tabPageCategoriesDetail.TabIndex = 1;
-            tabPageCategoriesDetail.Text = "Categories Detail";
-            tabPageCategoriesDetail.UseVisualStyleBackColor = true;
             // 
             // BtnClose
             // 
@@ -225,6 +207,24 @@
             label2.TabIndex = 8;
             label2.Text = "Search Pay Mode";
             // 
+            // tabPageCategoriesDetail
+            // 
+            tabPageCategoriesDetail.Controls.Add(TxtCategoriesDescription);
+            tabPageCategoriesDetail.Controls.Add(BtnCancel);
+            tabPageCategoriesDetail.Controls.Add(BtnSave);
+            tabPageCategoriesDetail.Controls.Add(label5);
+            tabPageCategoriesDetail.Controls.Add(TxtCategoriesName);
+            tabPageCategoriesDetail.Controls.Add(label4);
+            tabPageCategoriesDetail.Controls.Add(TxtCategoriesId);
+            tabPageCategoriesDetail.Controls.Add(label3);
+            tabPageCategoriesDetail.Location = new Point(4, 29);
+            tabPageCategoriesDetail.Name = "tabPageCategoriesDetail";
+            tabPageCategoriesDetail.Padding = new Padding(3);
+            tabPageCategoriesDetail.Size = new Size(792, 364);
+            tabPageCategoriesDetail.TabIndex = 1;
+            tabPageCategoriesDetail.Text = "Categories Detail";
+            tabPageCategoriesDetail.UseVisualStyleBackColor = true;
+            // 
             // BtnCancel
             // 
             BtnCancel.Image = Properties.Resources.cancel;
@@ -242,15 +242,6 @@
             BtnSave.Size = new Size(118, 48);
             BtnSave.TabIndex = 14;
             BtnSave.UseVisualStyleBackColor = true;
-            // 
-            // TxtCategoriesDescription
-            // 
-            TxtCategoriesDescription.Location = new Point(18, 184);
-            TxtCategoriesDescription.Multiline = true;
-            TxtCategoriesDescription.Name = "TxtCategoriesDescription";
-            TxtCategoriesDescription.PlaceholderText = "Write here...";
-            TxtCategoriesDescription.Size = new Size(516, 95);
-            TxtCategoriesDescription.TabIndex = 13;
             // 
             // label5
             // 
@@ -296,6 +287,14 @@
             label3.TabIndex = 8;
             label3.Text = "Category ID";
             // 
+            // TxtCategoriesDescription
+            // 
+            TxtCategoriesDescription.Location = new Point(18, 184);
+            TxtCategoriesDescription.Multiline = true;
+            TxtCategoriesDescription.Name = "TxtCategoriesDescription";
+            TxtCategoriesDescription.Size = new Size(516, 89);
+            TxtCategoriesDescription.TabIndex = 16;
+            // 
             // CategoriesView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -310,9 +309,9 @@
             tabControl1.ResumeLayout(false);
             tabPageCategoriesList.ResumeLayout(false);
             tabPageCategoriesList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DgCategories).EndInit();
             tabPageCategoriesDetail.ResumeLayout(false);
             tabPageCategoriesDetail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DgCategories).EndInit();
             ResumeLayout(false);
         }
 
@@ -334,11 +333,11 @@
         private Label label2;
         private Button BtnCancel;
         private Button BtnSave;
-        private TextBox TxtCategoriesDescription;
         private Label label5;
         private TextBox TxtCategoriesName;
         private Label label4;
         private TextBox TxtCategoriesId;
         private Label label3;
+        private TextBox TxtCategoriesDescription;
     }
 }

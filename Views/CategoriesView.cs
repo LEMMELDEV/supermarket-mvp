@@ -41,7 +41,7 @@ namespace Supermarket_mvp.Views
 
                 tabControl1.TabPages.Remove(tabPageCategoriesList);
                 tabControl1.TabPages.Add(tabPageCategoriesDetail);
-                tabPageCategoriesDetail.Text = "Add New Pay Mode";
+                tabPageCategoriesDetail.Text = "Add New Category";
 
             };
 
@@ -51,7 +51,7 @@ namespace Supermarket_mvp.Views
 
                 tabControl1.TabPages.Remove(tabPageCategoriesList);
                 tabControl1.TabPages.Add(tabPageCategoriesDetail);
-                tabPageCategoriesDetail.Text = "Edit Pay Mode";
+                tabPageCategoriesDetail.Text = "Edit Category";
 
             };
 
@@ -59,7 +59,7 @@ namespace Supermarket_mvp.Views
             BtnDelete.Click += delegate
             {
                 var result = MessageBox.Show(
-                    "Are you sure you want to delete the selected Pay Mode",
+                    "Are you sure you want to delete the selected Category",
                     "Warning",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning);
@@ -147,5 +147,25 @@ namespace Supermarket_mvp.Views
         {
             DgCategories.DataSource = categoriesList;
         }
+
+        private static CategoriesView instance;
+        public static CategoriesView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new CategoriesView();
+                instance.MdiParent = parentContainer;
+
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
+            }
+            else if (instance.WindowState == FormWindowState.Minimized)
+            {
+                instance.WindowState = FormWindowState.Normal;
+            }
+            instance.BringToFront();
+            return instance;
+        }
+
     }
 }

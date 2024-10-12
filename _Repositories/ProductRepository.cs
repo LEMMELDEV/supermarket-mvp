@@ -35,6 +35,7 @@ namespace Supermarket_mvp._Repositories
         }
 
         public void Edit(ProductModel productModel)
+
         {
             using (var connection = new SqlConnection(connectionString))
             using (var command = new SqlCommand())
@@ -107,7 +108,7 @@ namespace Supermarket_mvp._Repositories
                 connection.Open();
                 command.Connection = connection;
                 command.CommandText = @"SELECT * FROM Product 
-                    WHERE Product_Id=@id OR Product_Name LIKE @name+'%'
+                    WHERE Product_Id=@id OR Product_Name LIKE '%'+@name+'%'
                     ORDER BY Product_Id DESC";
                 command.Parameters.AddWithValue("@id", SqlDbType.Int).Value = productId;
                 command.Parameters.AddWithValue("@name", SqlDbType.NVarChar).Value = productName;

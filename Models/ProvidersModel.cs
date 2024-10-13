@@ -28,8 +28,6 @@ namespace Supermarket_mvp.Models
         [Required(ErrorMessage = "Last Name is required")]
         [StringLength(200, MinimumLength = 3, ErrorMessage = "Last Name must be between 3 and 200 characters")]
         public string Last_Name { get; set; }
-
-
         public string Address { get; set; }
         public string Birthday { get; set; }
         public string Phone_Number { get; set; }

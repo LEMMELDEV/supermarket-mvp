@@ -59,6 +59,7 @@ namespace Supermarket_mvp.Presenters
             providers.First_Name = view.ProvidersFirstName;
             providers.Last_Name = view.ProvidersLastName;
             providers.Address = view.ProvidersAddress;
+            providers.Birthday = view.ProvidersBirthday;
             providers.Phone_Number = view.ProvidersPhone;
             providers.Email = view.ProvidersEmail;
 
@@ -133,6 +134,7 @@ namespace Supermarket_mvp.Presenters
             providers.First_Name = view.ProvidersFirstName;
             providers.Last_Name = view.ProvidersLastName;
             providers.Address = view.ProvidersAddress;
+            providers.Birthday = view.ProvidersBirthday;
             providers.Phone_Number = view.ProvidersPhone;
             providers.Email = view.ProvidersEmail;
 

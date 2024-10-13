@@ -35,12 +35,14 @@
             BtnExit = new Button();
             BtnPayMode = new Button();
             pictureBox1 = new PictureBox();
+            BtnProviders = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(BtnProviders);
             panel1.Controls.Add(BtnCategories);
             panel1.Controls.Add(BtnProduct);
             panel1.Controls.Add(BtnExit);
@@ -56,7 +58,7 @@
             // 
             BtnCategories.BackgroundImage = (Image)resources.GetObject("BtnCategories.BackgroundImage");
             BtnCategories.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnCategories.Location = new Point(12, 238);
+            BtnCategories.Location = new Point(12, 236);
             BtnCategories.Name = "BtnCategories";
             BtnCategories.Size = new Size(223, 71);
             BtnCategories.TabIndex = 4;
@@ -66,7 +68,7 @@
             // 
             BtnProduct.BackgroundImage = Properties.Resources.products;
             BtnProduct.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnProduct.Location = new Point(12, 158);
+            BtnProduct.Location = new Point(12, 156);
             BtnProduct.Name = "BtnProduct";
             BtnProduct.Size = new Size(223, 71);
             BtnProduct.TabIndex = 3;
@@ -103,6 +105,16 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // BtnProviders
+            // 
+            BtnProviders.BackgroundImage = Properties.Resources.providers;
+            BtnProviders.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnProviders.Location = new Point(12, 315);
+            BtnProviders.Name = "BtnProviders";
+            BtnProviders.Size = new Size(223, 71);
+            BtnProviders.TabIndex = 5;
+            BtnProviders.UseVisualStyleBackColor = true;
+            // 
             // MainView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -126,5 +138,6 @@
         private Button BtnExit;
         private Button BtnProduct;
         private Button BtnCategories;
+        private Button BtnProviders;
     }
 }

@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Supermarket_mvp.Views
 {
-    internal interface IProductView
+    internal interface IProvidersView
     {
 
-
-        string ProductId { get; set; }
-        string ProductName { get; set; }
-        string ProductPrice { get; set; }
-        string ProductStock { get; set; }
-        string ProductCategory { get; set; }
-        string SearchValue { get; set; }
+        string ProvidersId { get; set; }
+        string ProvidersDocument { get; set; }
+        string ProvidersFirstName { get; set; }
+        string ProvidersLastName { get; set; }
+        string ProvidersAddress { get; set; }
+        string ProvidersBirthday { get; set; }
+        string ProvidersPhone { get; set; }
+        string ProvidersEmail { get; set; }
         bool IsEdit { get; set; }
         bool IsSuccessful { get; set; }
         string Message { get; set; }

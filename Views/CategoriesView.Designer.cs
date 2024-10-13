@@ -43,6 +43,7 @@
             TxtSearch = new TextBox();
             label2 = new Label();
             tabPageCategoriesDetail = new TabPage();
+            TxtCategoriesDescription = new TextBox();
             BtnCancel = new Button();
             BtnSave = new Button();
             label5 = new Label();
@@ -50,7 +51,6 @@
             label4 = new Label();
             TxtCategoriesId = new TextBox();
             label3 = new Label();
-            TxtCategoriesDescription = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -203,9 +203,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(21, 9);
             label2.Name = "label2";
-            label2.Size = new Size(122, 20);
+            label2.Size = new Size(117, 20);
             label2.TabIndex = 8;
-            label2.Text = "Search Pay Mode";
+            label2.Text = "Search Category";
             // 
             // tabPageCategoriesDetail
             // 
@@ -224,6 +224,14 @@
             tabPageCategoriesDetail.TabIndex = 1;
             tabPageCategoriesDetail.Text = "Categories Detail";
             tabPageCategoriesDetail.UseVisualStyleBackColor = true;
+            // 
+            // TxtCategoriesDescription
+            // 
+            TxtCategoriesDescription.Location = new Point(18, 184);
+            TxtCategoriesDescription.Multiline = true;
+            TxtCategoriesDescription.Name = "TxtCategoriesDescription";
+            TxtCategoriesDescription.Size = new Size(516, 89);
+            TxtCategoriesDescription.TabIndex = 16;
             // 
             // BtnCancel
             // 
@@ -286,14 +294,6 @@
             label3.Size = new Size(88, 20);
             label3.TabIndex = 8;
             label3.Text = "Category ID";
-            // 
-            // TxtCategoriesDescription
-            // 
-            TxtCategoriesDescription.Location = new Point(18, 184);
-            TxtCategoriesDescription.Multiline = true;
-            TxtCategoriesDescription.Name = "TxtCategoriesDescription";
-            TxtCategoriesDescription.Size = new Size(516, 89);
-            TxtCategoriesDescription.TabIndex = 16;
             // 
             // CategoriesView
             // 

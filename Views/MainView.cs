@@ -23,6 +23,7 @@ namespace Supermarket_mvp.Views
             BtnCategories.Click += delegate { ShowCategoriesView?.Invoke(this, EventArgs.Empty); };
 
 
+
             BtnExit.Click += delegate { this.Close(); };
 
         }
@@ -30,6 +31,6 @@ namespace Supermarket_mvp.Views
         public event EventHandler ShowPayModeView;
         public event EventHandler ShowProductView;
         public event EventHandler ShowCategoriesView;
-        public event EventHandler ShowCustomerView;
+        public event EventHandler ShowProvidersView;
     }
 }

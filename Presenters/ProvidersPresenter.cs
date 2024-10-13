@@ -129,14 +129,16 @@ namespace Supermarket_mvp.Presenters
 
             // se cambia el contenido de las cajas de texto por el objeto recuperado del datagridvewi.
 
-            providers.Id = Convert.ToInt32(view.ProvidersId);
-            providers.Document_Number = view.ProvidersDocument;
-            providers.First_Name = view.ProvidersFirstName;
-            providers.Last_Name = view.ProvidersLastName;
-            providers.Address = view.ProvidersAddress;
-            providers.Birthday = view.ProvidersBirthday;
-            providers.Phone_Number = view.ProvidersPhone;
-            providers.Email = view.ProvidersEmail;
+            view.ProvidersId = providers.Id.ToString();
+            view.ProvidersDocument = providers.Document_Number.Trim();
+            view.ProvidersFirstName = providers.First_Name.Trim();
+            view.ProvidersLastName = providers.Last_Name.Trim();
+            view.ProvidersAddress = providers.Address.Trim();
+            view.ProvidersBirthday = providers.Birthday.Trim();
+            view.ProvidersPhone = providers.Phone_Number.Trim();
+            view.ProvidersEmail = providers.Email.Trim();
+
+
 
             // se establece el modo como edición.
             view.IsEdit = true;

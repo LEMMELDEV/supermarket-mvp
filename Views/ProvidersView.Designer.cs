@@ -34,6 +34,11 @@
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPageProvidersList = new TabPage();
+            BtnClose = new Button();
+            BtnDelete = new Button();
+            BtnEdit = new Button();
+            BtnNew = new Button();
+            BtnSearch = new Button();
             DgProviders = new DataGridView();
             TxtSearch = new TextBox();
             label2 = new Label();
@@ -56,11 +61,6 @@
             label4 = new Label();
             TxtProvidersId = new TextBox();
             label3 = new Label();
-            BtnClose = new Button();
-            BtnDelete = new Button();
-            BtnEdit = new Button();
-            BtnNew = new Button();
-            BtnSearch = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -126,6 +126,65 @@
             tabPageProvidersList.TabIndex = 0;
             tabPageProvidersList.Text = "Providers List";
             tabPageProvidersList.UseVisualStyleBackColor = true;
+            // 
+            // BtnClose
+            // 
+            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnClose.AutoSize = true;
+            BtnClose.Image = Properties.Resources.cerrar;
+            BtnClose.Location = new Point(644, 284);
+            BtnClose.Name = "BtnClose";
+            BtnClose.Size = new Size(130, 59);
+            BtnClose.TabIndex = 20;
+            BtnClose.TextAlign = ContentAlignment.BottomCenter;
+            BtnClose.UseVisualStyleBackColor = true;
+            // 
+            // BtnDelete
+            // 
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnDelete.AutoSize = true;
+            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Location = new Point(644, 219);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(130, 59);
+            BtnDelete.TabIndex = 19;
+            BtnDelete.TextAlign = ContentAlignment.BottomCenter;
+            BtnDelete.UseVisualStyleBackColor = true;
+            // 
+            // BtnEdit
+            // 
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnEdit.AutoSize = true;
+            BtnEdit.Image = Properties.Resources.edit;
+            BtnEdit.Location = new Point(644, 154);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new Size(130, 59);
+            BtnEdit.TabIndex = 18;
+            BtnEdit.TextAlign = ContentAlignment.BottomCenter;
+            BtnEdit.UseVisualStyleBackColor = true;
+            // 
+            // BtnNew
+            // 
+            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnNew.AutoSize = true;
+            BtnNew.Image = Properties.Resources._new;
+            BtnNew.Location = new Point(644, 89);
+            BtnNew.Name = "BtnNew";
+            BtnNew.Size = new Size(130, 59);
+            BtnNew.TabIndex = 17;
+            BtnNew.TextAlign = ContentAlignment.BottomCenter;
+            BtnNew.UseVisualStyleBackColor = true;
+            // 
+            // BtnSearch
+            // 
+            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnSearch.AutoSize = true;
+            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
+            BtnSearch.Location = new Point(644, 15);
+            BtnSearch.Name = "BtnSearch";
+            BtnSearch.Size = new Size(48, 50);
+            BtnSearch.TabIndex = 16;
+            BtnSearch.UseVisualStyleBackColor = true;
             // 
             // DgProviders
             // 
@@ -334,65 +393,6 @@
             label3.Size = new Size(83, 20);
             label3.TabIndex = 16;
             label3.Text = "Provider ID";
-            // 
-            // BtnClose
-            // 
-            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnClose.AutoSize = true;
-            BtnClose.Image = Properties.Resources.cerrar;
-            BtnClose.Location = new Point(644, 284);
-            BtnClose.Name = "BtnClose";
-            BtnClose.Size = new Size(130, 59);
-            BtnClose.TabIndex = 20;
-            BtnClose.TextAlign = ContentAlignment.BottomCenter;
-            BtnClose.UseVisualStyleBackColor = true;
-            // 
-            // BtnDelete
-            // 
-            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnDelete.AutoSize = true;
-            BtnDelete.Image = Properties.Resources.delete;
-            BtnDelete.Location = new Point(644, 219);
-            BtnDelete.Name = "BtnDelete";
-            BtnDelete.Size = new Size(130, 59);
-            BtnDelete.TabIndex = 19;
-            BtnDelete.TextAlign = ContentAlignment.BottomCenter;
-            BtnDelete.UseVisualStyleBackColor = true;
-            // 
-            // BtnEdit
-            // 
-            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnEdit.AutoSize = true;
-            BtnEdit.Image = Properties.Resources.edit;
-            BtnEdit.Location = new Point(644, 154);
-            BtnEdit.Name = "BtnEdit";
-            BtnEdit.Size = new Size(130, 59);
-            BtnEdit.TabIndex = 18;
-            BtnEdit.TextAlign = ContentAlignment.BottomCenter;
-            BtnEdit.UseVisualStyleBackColor = true;
-            // 
-            // BtnNew
-            // 
-            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnNew.AutoSize = true;
-            BtnNew.Image = Properties.Resources._new;
-            BtnNew.Location = new Point(644, 89);
-            BtnNew.Name = "BtnNew";
-            BtnNew.Size = new Size(130, 59);
-            BtnNew.TabIndex = 17;
-            BtnNew.TextAlign = ContentAlignment.BottomCenter;
-            BtnNew.UseVisualStyleBackColor = true;
-            // 
-            // BtnSearch
-            // 
-            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnSearch.AutoSize = true;
-            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
-            BtnSearch.Location = new Point(644, 15);
-            BtnSearch.Name = "BtnSearch";
-            BtnSearch.Size = new Size(48, 50);
-            BtnSearch.TabIndex = 16;
-            BtnSearch.UseVisualStyleBackColor = true;
             // 
             // ProvidersView
             // 

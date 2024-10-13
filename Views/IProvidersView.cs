@@ -17,6 +17,7 @@ namespace Supermarket_mvp.Views
         string ProvidersBirthday { get; set; }
         string ProvidersPhone { get; set; }
         string ProvidersEmail { get; set; }
+        string SearchValue { get; set; }
         bool IsEdit { get; set; }
         bool IsSuccessful { get; set; }
         string Message { get; set; }
@@ -30,6 +31,7 @@ namespace Supermarket_mvp.Views
 
 
         void SetProductListBildingSource(BindingSource productList);
+        void SetProvidersListBildingSource(BindingSource providersBindingSource);
         void Show();
 
 
